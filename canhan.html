@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dovanhiepwebcuatui</title>
+    <link rel="stylesheet" href="canhan.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="language-selector">
+          <label for="langSelect"></label>
+          <select id="langSelect">
+            <option value="vi">VI</option>
+            <option value="en" selected>EN</option>
+          </select>
+        </div>
+        <ul>
+          <li>
+            <a href="#about" data-en="introduce" data-vi="Giới thiệu"
+              ><u>introduce</u></a
+            >
+          </li>
+          <li>
+            <a href="#skills" data-en="skills" data-vi="Kỹ năng"
+              ><u>skill</u></a
+            >
+          </li>
+          <li>
+            <a href="#portfolio" data-en="project" data-vi="Dự án"
+              ><u>project</u></a
+            >
+          </li>
+          <li>
+            <a href="#contact" data-en="contact" data-vi="Liên hệ"
+              ><u>contact</u></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about" class="fade-in">
+        <h1 data-en="My Profile" data-vi="Hồ sơ của tôi">My Profile</h1>
+        <div class="about-content">
+          <!-- Phần này được căn ngang: ảnh bên trái, chữ bên phải -->
+          <div class="about-row">
+            <img src="IMG_20230428_082551.jpg" alt="Ảnh đại diện" />
+            <p
+              data-en="My name is Do Van Hiep, and I am currently studying at the NIIE Institute of Nguyen Tat Thanh University. I am pursuing a major in Software Engineering,
+        where I learn about programming, system design, and problem-solving in technology."
+              data-vi="Tôi tên là Đỗ Văn Hiệp, hiện đang theo học tại Viện NIIE thuộc Đại học Nguyễn Tất Thành. Tôi đang theo học chuyên ngành Kỹ thuật Phần mềm,
+        nơi tôi được học về lập trình, thiết kế hệ thống và giải quyết vấn đề công nghệ."
+            >
+              My name is Do Van Hiep, and I am currently studying at the NIIE Institute of Nguyen Tat Thanh University. I am pursuing a major in Software Engineering,
+        where I learn about programming, system design, and problem-solving in technology.
+            </p>
+          </div>
+
+          <!-- Đoạn văn tiếp theo vẫn nằm dưới bình thường -->
+
+          <p data-en="As a Software Engineering student, I focus on learning modern programming languages and building useful applications. 
+        I enjoy creating software that can solve real-world problems and make people's lives easier.
+        Outside of school, I am passionate about football and coding. " data-vi="Là sinh viên ngành Kỹ thuật Phần mềm, tôi tập trung vào việc học các ngôn ngữ lập trình hiện đại và xây dựng các ứng dụng hữu ích.
+        Tôi thích tạo ra các phần mềm có thể giải quyết các vấn đề thực tế và giúp cuộc sống của mọi người dễ dàng hơn.
+        Ngoài giờ học, tôi đam mê bóng đá và lập trình."> Outside of school, I am passionate about football and coding.
+          As a Software Engineering student, I focus on learning modern programming languages and building useful applications. 
+        I enjoy creating software that can solve real-world problems and make people's lives easier.
+        Outside of school, I am passionate about football and coding.</p>
+          <p
+            data-en="
+        Football helps me stay active and healthy, while programming allows me to express creativity and continuously improve my logical thinking."
+            data-vi="
+        Bóng đá giúp tôi năng động và khỏe mạnh, trong khi lập trình cho phép tôi thể hiện sự sáng tạo và liên tục cải thiện tư duy logic của mình."
+          >
+            Football helps me stay active and healthy, while programming allows
+            me to express creativity and continuously improve my logical
+            thinking.
+          </p>
+
+          
+        </div>
+      </section>
+
+      <section id="skills" class="fade-in">
+        <h2
+          data-en="Basic Programming Skills Across Languages"
+          data-vi="Kỹ năng lập trình cơ bản trên nhiều ngôn ngữ"
+        >
+          Basic Programming Skills Across Languages
+        </h2>
+        <ul>
+          <li>HTML & CSS</li>
+          <li>JavaScript</li>
+          <li>C++</li>
+          <li>Python</li>
+          <li>SQL</li>
+        </ul>
+      </section>
+
+      <section id="portfolio" class="fade-in">
+        <h2
+          data-en="my projects during my time at school"
+          data-vi="các dự án của tôi trong thời gian tôi ở trường"
+        >
+          my projects during my time at school
+        </h2>
+        <div class="project-grid">
+          <div class="project-item">
+            <h3 data-en="Project 1" data-vi="Dự án 1">Project 1</h3>
+            <p
+              data-en="C++ browser base project. Project name: Maze"
+              data-vi="dự án cơ sở trình duyệt C++. Tên dự án: Mê Cung"
+            >
+              C++ browser base project. Project name: Maze
+            </p>
+            <a
+              href="https://github.com/Vanhipp/mecung"
+              target="_blank"
+              data-en="see project"
+              data-vi="Xem dự án"
+              >see project</a
+            >
+          </div>
+          <div class="project-item">
+            <h3 data-en="Project 2" data-vi="Dự án 2">Project 2</h3>
+            <p
+              data-en="Game development project in python language advanced programming"
+              data-vi="dự án phát triển game bằng ngôn ngữ python môn lặp trình năng cao"
+            >
+              Game development project in python language advanced programming
+            </p>
+            <a
+              href="https://github.com/Vanhipp/gamepy"
+              target="_blank"
+              data-en="see project"
+              data-vi="Xem dự án"
+              >see project</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="fade-in">
+        <h2 data-en="contact" data-vi="Liên hệ">contact</h2>
+        <p
+          data-en="You can contact me via email:"
+          data-vi="Bạn có thể liên hệ với tôi qua email:"
+        >
+          You can contact me via email:
+        </p>
+        <a
+          class="social-link"
+          href="mailto:dohiep0795446823@gmail.com"
+          target="_blank"
+          data-en="Email"
+          data-vi="Email"
+          type="email"
+          >Email</a
+        >
+        <p
+          data-en="Or follow me on social media:"
+          data-vi="Hoặc theo dõi tôi trên mạng xã hội:"
+        >
+          Or follow me on social media:
+        </p>
+        <ul class="social-links">
+          <li>
+            <a
+              href="https://www.facebook.com/share/16n8B7Lqx6/"
+              target="_blank"
+              data-en="Facebook"
+              data-vi="Facebook"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/Vanhipp"
+              target="_blank"
+              data-en="GitHub"
+              data-vi="GitHub"
+              >GitHub</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p
+        data-en="&copy; 2025 Vanhipp. All rights reserved."
+        data-vi="&copy; 2025 Vanhipp. Tất cả các quyền được bảo lưu."
+      >
+        &copy; 2025 Vanhipp. All rights reserved.
+      </p>
+      <p
+        data-en="Thanks for stopping by! I hope you found something useful."
+        data-vi="Cảm ơn bạn đã ghé thăm! Hy vọng bạn tìm thấy thông tin hữu ích."
+      >
+        Thanks for stopping by! I hope you found something useful.
+      </p>
+    </footer>
+
+    <script src="canhan.js"></script>
+  </body>
+</html>

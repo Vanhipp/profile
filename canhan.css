@@ -1,0 +1,296 @@
+/* Thiết lập chung */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  background: #c6ebf5;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+header nav ul {
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 30px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: #ffd700;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+  max-width: 960px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 3px solid #007bff;
+  border-radius: 8px;
+  border: 3px solid #007bff;
+  transition: border-color 0.3s ease;
+  background: #fff;
+}
+
+main:hover {
+  border-color: #0056b3;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.3);
+}
+
+section {
+  padding: 40px 0;
+  border-bottom: 1px solid #88c8c8;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+/* About Section */
+
+
+.about-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* giúp tự xuống hàng trên mobile */
+  
+}
+
+.about-row img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #cedce8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  
+}
+
+.about-row p {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-row p {
+    padding: 0 10px;
+  }
+}
+
+/* Skills Section */
+#skills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+#skills ul li {
+  background: #eee;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #555;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(to right, #5e6263, #a2cbd3);
+  border: 3px solid #172e47;
+  border-radius: 8px;
+  border: 3px solid #959698;
+  transition: border-color 0.3s ease;
+}
+
+/* Portfolio Section */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project-item {
+  background: #f6f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  border: 3px solid #5bb6c2;
+  border-radius: 8px;
+  border: 3px solid #64bcd6;
+  transition: border-color 0.3s ease;
+}
+
+.project-item h3 {
+  color: #020202;
+  margin-top: 0;
+}
+
+.project-item a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 15px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.project-item a:hover {
+  background: #0056b3;
+}
+
+/* Contact Section */
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.social-link {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-link a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+  margin-top: 30px;
+}
+
+/* Hiệu ứng Fade-in (sẽ được kích hoạt bởi JS) */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  header nav ul li {
+    margin-right: 10px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content img {
+    margin-bottom: 15px;
+  }
+}
+
+/* nút vi-eng */
+.language-selector {
+  text-align: right;
+  margin-right: 30px;
+}
+/* Bọc lang-switcher trong container căn phải */
+.lang-switcher {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+/* Căn toàn bộ select về phải */
+select {
+  padding: 6px;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+/* Button căn phải */
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
